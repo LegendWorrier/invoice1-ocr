@@ -287,7 +287,7 @@ app.use('/api/profile', profile);
 app.use('/api/posts', posts);
 app.use('/api/notifications', Notification);
 
-app.use(express.static('client/build'))
+// app.use(express.static('client/build'))
 
 // if (process.env.NODE_ENV === 'production') {
   //Set static folder
