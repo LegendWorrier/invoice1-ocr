@@ -29,27 +29,27 @@ app.use(morgan('dev'))
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
 
-    cb(null, path.join(__dirname, 'uploads'));
-  },
-  filename: (req, file, cb) => {
+//     cb(null, path.join(__dirname, 'uploads'));
+//   },
+//   filename: (req, file, cb) => {
 
-    // console.log('req2222', req.body.filename)
-    // const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
-    // // const uniqueSuffix = Date.now();
-    // const filename = req.body.filename;
+//     // console.log('req2222', req.body.filename)
+//     // const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
+//     // // const uniqueSuffix = Date.now();
+//     // const filename = req.body.filename;
 
-    // const fileName = req.body.filename[0] + '.' + file.originalname.split('.').pop();
+//     // const fileName = req.body.filename[0] + '.' + file.originalname.split('.').pop();
 
-    // const fileName = req.body.filename[0] + '-' + uniqueSuffix + '.' + file.originalname.split('.').pop();
+//     // const fileName = req.body.filename[0] + '-' + uniqueSuffix + '.' + file.originalname.split('.').pop();
 
-    // cb(null, fileName);
-    cb(null, file.originalname);
+//     // cb(null, fileName);
+//     cb(null, file.originalname);
 
-  },
-});
+//   },
+// });
 // const upload = multer({ storage });
 // const transporter = nodemailer.createTransport({
 //   service: 'hotmail',
