@@ -268,18 +268,18 @@ app.use(bodyParser.json());
 
 //DB Config
 
-//Connect to MongoDB
-const db = require('./config/keys').mongoURI
-mongoose
-  .connect(db)
-  .then(() => console.log('MongoDB Connected'))
-  .catch(err => console.log(err));
+// //Connect to MongoDB
+// const db = require('./config/keys').mongoURI
+// mongoose
+//   .connect(db)
+//   .then(() => console.log('MongoDB Connected'))
+//   .catch(err => console.log(err));
 
-//Passport middleware
-app.use(passport.initialize());
+// //Passport middleware
+// app.use(passport.initialize());
 
-//Passport Config
-require('./config/passport')(passport);
+// //Passport Config
+// require('./config/passport')(passport);
 
 // Use Routes
 app.use('/api/users', users);
