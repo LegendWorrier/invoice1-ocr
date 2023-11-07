@@ -2,7 +2,7 @@
   "name": "social",
   "version": "1.0.0",
   "description": "social network for developers",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node index.js",
