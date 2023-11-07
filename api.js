@@ -297,7 +297,7 @@ app.use(express.static('client/build'))
   //   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   // })
 // }
-app.get('*', (req, res) => {
+app.use('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 })
 module.exports = app
