@@ -79,11 +79,11 @@ app.use(bodyParser.json());
 // const server = http.createServer(app);
 // var chatServer = require('http').Server(app);
 
-// const io = socketIO(server);
+// // const io = socketIO(server);
 
-// Create a Socket.IO server instance
+// // Create a Socket.IO server instance
 
-// Socket.IO event: client connected
+// // Socket.IO event: client connected
 // const io = require('socket.io')(chatServer, {
 //   cors: {
 //   }
@@ -143,14 +143,11 @@ app.use(bodyParser.json());
 //   })
 // });
 
-// app.post('/upload', upload.array('files'), (req, res) => {
-  // Access the uploaded files via req.files
-//  console.log('files', req.body);
-//  res.status(200).json('success')
-  // Handle file upload logic here
+// // app.post('/upload', upload.array('files'), (req, res) => {
+// //   console.log('files', req.body);
+// //   res.status(200).json('success')
 
-  // res.send('Files uploaded successfully');
-// });
+// // });
 
 // function isFilenameWithinDateRange(fileName, startDate, endDate) {
 //   const datePart = fileName.split('-')[1].split('.')[0];
@@ -255,10 +252,10 @@ app.use(bodyParser.json());
 
 // })
 
-// Create an array to hold the Sharp objects representing the images
+// // Create an array to hold the Sharp objects representing the images
 
 
-// Start the server
+// // Start the server
 // const port1 = 8888; // Specify the port you want to use
 // chatServer.listen(port1, () => {
 //   console.log(`SocketServer listening on port ${port1}`);
