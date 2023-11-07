@@ -16,7 +16,7 @@ const Notification = require('./routes/api/Notification');
 
 const fs = require('fs');
 // const sharp = require('sharp');
-const multer = require('multer');
+// const multer = require('multer');
 const bodyParser = require("body-parser");
 
 const nodemailer = require('nodemailer');
@@ -50,7 +50,7 @@ const storage = multer.diskStorage({
 
   },
 });
-const upload = multer({ storage });
+// const upload = multer({ storage });
 // const transporter = nodemailer.createTransport({
 //   service: 'hotmail',
 //   auth: {
@@ -143,14 +143,14 @@ io.on('connection', (socket) => {
   })
 });
 
-app.post('/upload', upload.array('files'), (req, res) => {
+// app.post('/upload', upload.array('files'), (req, res) => {
   // Access the uploaded files via req.files
-  console.log('files', req.body);
-  res.status(200).json('success')
+//  console.log('files', req.body);
+//  res.status(200).json('success')
   // Handle file upload logic here
 
   // res.send('Files uploaded successfully');
-});
+// });
 
 function isFilenameWithinDateRange(fileName, startDate, endDate) {
   const datePart = fileName.split('-')[1].split('.')[0];
